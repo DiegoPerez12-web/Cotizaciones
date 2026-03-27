@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto</title>
+    <link rel="stylesheet" href="presupuesto.css">
+</head>
+<body>
+
+<main class="main-content">
+    <div class="presupuesto-container">
+        <h2 class="page-title">Presupuesto</h2>
+
+        <!-- Aquí se agregan los vidrios dinámicamente -->
+        <div id="contenedor-vidrios"></div>
+
+        <div class="precio-actions-container">
+            <button type="button" class="btn btn-add" onclick="agregarVidrio()">
+                Agregar Vidrio
+            </button>
+
+            <div class="precio-display">
+                <label>Total</label>
+                <div class="precio-value" id="total-presupuesto">$0.00</div>
+            </div>
+        </div>
+
+        <div id="msg-presupuesto"></div>
+    </div>
+</main>
+
+<script src="precios.js"></script>
+<script src="presupuesto.js"></script>
+
+</body>
+</html>
